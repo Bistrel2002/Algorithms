@@ -4,17 +4,45 @@
     {
         public static void MySort1(int[] array)
         {
-            throw new NotImplementedException();
+         
+            for(var i = 0; i < array.Length; i++)
+            {
+                for(var j = i + 1; j < array.Length; j++)
+                {
+                    if (array[i] > array[j])
+                    {
+                        int tmp= array[i];
+                        array[i] = array[j];
+                        array[j] = tmp;
+                    }
+                }
+            }
         }
 
         public static void MySort2(int[] array)
         {
-            throw new NotImplementedException();
+            for (var i = 0; i < array.Length; i++)
+            {
+                for (var j = i + 1; j < array.Length; j++)
+                {
+                    if (array[i] > array[j])
+                    {
+                        int tmp = array[i];
+                        array[i] = array[j];
+                        array[j] = tmp;
+                    }
+                }
+            }
         }
 
         public static void MergeSort(int[] array)
         {
-            throw new NotImplementedException();
+            var i = 0;
+            var j = array.Length - 1;
+            while (array[i] < array[j]) 
+            {
+              var middle =  (array[i] +array[j]) / 2;
+            }
         }
 
         public static void HeapSort(int[] array)
